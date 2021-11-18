@@ -1,0 +1,81 @@
+<div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex registration_page_css">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+
+              <form method="POST" action="register_user" id="Register">
+                
+                <div class="form-outline mb-4">
+                  <input type="text" id="Email" maxlength="40" name="Email" class="form-control form-control-lg" placeholder="Email will become your site user ID" />
+                  <label class="form-label" for="Email">Email</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" maxlength="32" minlength="8" id="Password1" name="Password1" class="form-control form-control-lg" placeholder="Password must be minimum of 8 characters, and include at least 1 number and 1 UPPERCASE letter "/>
+                  <label class="form-label" for="Password1">Password 1</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" maxlength="32" minlength="8" id="Password2" name="Password2" class="form-control form-control-lg" placeholder="Entry must match password above" />
+                  <label class="form-label" for="Password2">Password 2</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="FirstName"  maxlength="25" name="FirstName" class="form-control form-control-lg" placeholder="Preferred first name"/>
+                  <label class="form-label" for="FirstName">First Name</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="LastName"  maxlength="25" name="LastName" class="form-control form-control-lg" placeholder="Legal last name" />
+                  <label class="form-label" for="LastName">Last Name</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="Address" maxlength="30" name="Address" class="form-control form-control-lg" placeholder="Optional: House number and street"/>
+                  <label class="form-label" for="Address">Address</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="City" maxlength="25" name="City" class="form-control form-control-lg" placeholder="Optional: City of residence"/>
+                  <label class="form-label" for="City">City</label>
+                </div>
+                
+                <div class="form-outline mb-4">
+                  <!-- <input type="text" id="State" maxlength="2" name="State" class="form-control form-control-lg"     /> -->
+                  <select id="State"  name="State" class="form-control form-control-lg">
+                      <option value="null">--Select State Optional--</option>
+                  </select>
+                  <label class="form-label" for="State">State</label>
+                </div>
+  
+                <div class="form-outline mb-4">
+                  <input type="text" maxlength="5" id="PostalCode" name="PostalCode" class="form-control form-control-lg" placeholder="Optional: 5 character zip code"/>
+                  <label class="form-label" for="PostalCode">Postal Code</label>
+                </div>
+  
+                <div class="form-outline mb-4">
+                  <input type="text" id="Phone" maxlength="12" name="Phone" class="form-control form-control-lg" placeholder="Optional: Area code plus phone"/>
+                  <label class="form-label" for="Phone">Phone</label>
+                </div>
+
+               <br>
+               <br>
+
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="btn btn-block gradient-custom-4 text-body btn-register">Register</button>
+                  <button type="button" class="btn btn-block gradient-custom-4 text-body btn-register cancel">Cancel</button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="/login" class="fw-bold text-body"><u>Login here</u></a></p>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

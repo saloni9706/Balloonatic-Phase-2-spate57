@@ -1,0 +1,73 @@
+
+
+        <div class="main_section row">
+            <div class="home_page_img center">
+                <img src="./images/shop_now.jpg" alt="Home Page Image" style="max-width:100%; height:auto;">
+                <span class='ballon_shop'>Stay Home and Shop Online</span>
+            </div>
+        </div>
+
+        <div class="product_section_2 row_pro">
+            <% for (i=0;i < product_list.length; i++) { %>
+            <div class="product ">
+                <article>
+                    <img class="img-responsive" src="<%= product_list[i].imageURL%>"
+                         alt="Balloon">
+                    <a class="product_name" href="/" >
+                        <%= product_list[i].productName %>  
+                    </a>
+                    <div class="description">
+                        <%= product_list[i].discription %>
+                    </div>
+                    
+                    <span class="product_price"> $<%= product_list[i].unitPrice %> </span>
+                   
+                </article>
+            </div>
+            <% } %>
+            <div class="product">
+                <article>
+                    <img class="img-responsive" src="./products/product-2.jfif"
+                         alt="Balloon">
+                    <a class="product_name" href="home.html" >
+                        Double 1
+                    </a>
+                    <div class="description">
+                        diam donec adipiscing tristique risus
+                    </div>
+                    
+                    <span class="product_price"> $83.00 </span>
+                   
+                </article>
+            </div>
+            <div class="product">
+                <article>
+                    <img class="img-responsive" src="./products/product-3.jpg"
+                         alt="Balloon">
+                    <a class="product_name" href="home.html" >
+                        Bubble 2
+                    </a>
+                    <div class="description">
+                        diam donec adipiscing tristique risus
+                    </div>
+                    
+                    <span class="product_price"> $67.00 </span>
+                   
+                </article>
+            </div>
+            
+            
+            
+        </div>
+        
+        <div class="row">
+            <div class="footer row">
+                <div class="content">
+                    <img src="./images/balloon.jpg" alt="The Balloonatic Asylum">
+                        <div class="foot">2021 © The Balloonatic Asylum. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</body>
